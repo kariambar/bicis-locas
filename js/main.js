@@ -8,13 +8,13 @@ function validateForm(){
   
 
 //Todos los campos son obligatorios, excepto los dos últimos.
-	if (nombre == "" || nombre.length == 0){
+if (nombre == "" || nombre.length == 0){
         var span = document.createElement("span");
-        var contiene = document.getElementById('name');
+        var contiene = document.getElementById("name");
         var padre = contiene.parentNode;
         padre.appendChild(span);
         var texto = document.createTextNode("Debe ingresar su nombre");
-        nuevoSpan.appendChild(texto);
-        return nuevoSpan;
+        span.appendChild(texto);
+        return span;
     }
 }
